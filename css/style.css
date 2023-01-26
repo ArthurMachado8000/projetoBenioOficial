@@ -38,8 +38,21 @@ ul {
 .header-menu a {
   color: green;
   display: inline-block;
-  padding: 10px;
-  font-size: 16px;
-  background: #111;
+  padding: 24px;
+  font-size: 20px;
+  background: #001111;
   border-radius: 4px;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: white;
+  transition: 0.3s;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
 }
